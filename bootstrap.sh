@@ -140,5 +140,8 @@ set -e
 pipx install ansible
 pipx inject --include-apps ansible argcomplete
 
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
 echo
 echo "Success!"
