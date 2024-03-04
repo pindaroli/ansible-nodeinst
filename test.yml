@@ -12,9 +12,11 @@
       apt_repository:
         repo: 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main'
         state: present
+      become: yes
 
     - name: Update apt and install Google Chrome
       apt:
         name: google-chrome-stable
         state: latest
         update_cache: yes
+      become: yes 

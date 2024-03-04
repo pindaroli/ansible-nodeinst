@@ -1,0 +1,9 @@
+---
+- name: Esempio di playbook
+  hosts: all
+  tasks:
+    - name: Esegui il ping sui nodi
+      ansible.builtin.ping:
+    - name: Stampa un messaggio
+      ansible.builtin.debug:
+        msg: "Ciao mondo"

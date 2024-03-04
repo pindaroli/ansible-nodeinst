@@ -1,0 +1,16 @@
+---
+- hosts: all
+  vars_files:
+    - secret.yml
+  vars:
+          auth_method: 1
+  roles:
+    - ansible-role-googlechrome
+    - joenyland.samba
+    #- lexshabalin.231206_nfs_server_role
+    - ednz_cloud.install_docker
+    - shelleg.ansible_role_portainer
+            
+     
+      
+  become: yes

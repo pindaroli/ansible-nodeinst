@@ -1,0 +1,2 @@
+[all]
+olindo@mediaserver.pind ansible_sudo_pass={{my_sudo_pass}}
